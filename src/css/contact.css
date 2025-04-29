@@ -1,0 +1,31 @@
+.contact-item {
+  transition: 0.3s ease-in-out;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.contact-item:hover {
+  background-color: #444;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.contact-item a {
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.contact-item a:hover {
+  color: #00ffff;
+}
+
+.contact-item .text-primary {
+  transition: color 0.3s ease;
+}
+
+.contact-item .text-primary:hover {
+  color: #00ffff;
+}
