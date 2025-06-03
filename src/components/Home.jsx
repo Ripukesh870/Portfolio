@@ -68,7 +68,7 @@ const Home = () => {
 
       {/* Download Resume Button */}
       <a
-        href="https://1drv.ms/b/c/762fda53f8675c9a/EZrgOXq7TRxHjWLxCIy6OEIBcRZFxIogOO1IvGH4g1Y8hA?e=eFztbx" // <-- Apna resume ka URL yaha daalo
+        href="https://1drv.ms/b/c/762fda53f8675c9a/ETJ_VWKhYRpKoSMtjPKPWcQBK-6Bc8oY3bbvX0UWFt5gGg?e=eIuHSN" // <-- Apna resume ka URL yaha daalo
         download
         className="btn btn-danger rounded-pill px-4 py-2 mb-4 fw-bold"
       >
