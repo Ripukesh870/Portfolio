@@ -1,0 +1,53 @@
+/* .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  transform: scale(1.02);
+} */
+
+
+
+
+/* honors.css */
+
+.glitch {
+  position: relative;
+  color: #0ff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.1;
+  }
+}
+
+.floating-badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #00ffff33;
+  color: #00ffff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 0 12px #00ffffaa;
+  animation: float 3s ease-in-out infinite;
+  z-index: 10;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}

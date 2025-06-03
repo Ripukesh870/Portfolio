@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import img2 from "./assets/img2.jpg"
 import Qualification from "./components/Qualification";
+import Honors from "./components/Honors"
 function App() {
   return (
     <div className="bg-gray-900 text-white"  style={{ backgroundImage:`url(${img2})`, backgroundSize: "cover", backgroundPosition: "top", backgroundRepeat: "no-repeat", }}>
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Projects />
       <Qualification/>
+      <Honors/>
       <Contact />
       <Footer />
     </div>
