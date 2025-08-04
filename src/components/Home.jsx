@@ -8,6 +8,7 @@ import { FaLinkedin, FaGithub, FaInstagram,FaYoutube } from "react-icons/fa";
 const Home = () => {
   return (
     <section
+      id="home"
       className="vh-100 d-flex flex-column justify-content-center align-items-center bg-light text-center"
       style={{
         backgroundImage: `url(${img2})`,
