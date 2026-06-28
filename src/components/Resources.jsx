@@ -68,7 +68,7 @@ import img1 from "../assets/img1.jpg"; // You can replace per subject
 
 const subjects = [
   { name: "C" },
-  { name: "C++" },
+  { name: "CPP" },
   { name: "DSA" },
   { name: "HTML" },
   { name: "CSS" },

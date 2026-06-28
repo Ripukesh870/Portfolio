@@ -248,7 +248,7 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import cIntro from "../assets/pdf/C/intro.pdf";
+import cIntro from "../assets/pdf/C/Intro.pdf";
 
 const topicData = {
   c: [
@@ -306,6 +306,121 @@ const topicData = {
       title: "Tables",
       content: "Tables are made with <table>, <tr>, and <td> tags...",
       pdfFile: "/pdfs/html_tables.pdf",
+    },
+  ],
+
+  cpp: [
+    {
+      title: "Introduction to C++",
+      content: "C++ is a general-purpose programming language that supports procedural, object-oriented and generic programming...",
+      pdfFile: "/pdfs/cpp_intro.pdf",
+    },
+    {
+      title: "Syntax & Variables",
+      content: "Basic syntax, data types, variables, input/output using cin and cout, headers and main function...",
+      pdfFile: "/pdfs/cpp_syntax_variables.pdf",
+    },
+    {
+      title: "Functions & OOP",
+      content: "Functions, pass-by-value/reference, classes, objects, constructors, destructors, inheritance, polymorphism...",
+      pdfFile: "/pdfs/cpp_oop.pdf",
+    },
+    {
+      title: "STL (Standard Template Library)",
+      content: "Containers (vector, list, map), iterators, algorithms, and working with templates...",
+      pdfFile: "/pdfs/cpp_stl.pdf",
+    },
+  ],
+
+  dsa: [
+    {
+      title: "Introduction to DSA",
+      content: "Data Structures and Algorithms (DSA) overview: why they matter, complexity (Big-O) fundamentals...",
+      pdfFile: "/pdfs/dsa_intro.pdf",
+    },
+    {
+      title: "Arrays & Strings",
+      content: "Array operations, common string algorithms, two-pointer technique, sliding window...",
+      pdfFile: "/pdfs/dsa_arrays_strings.pdf",
+    },
+    {
+      title: "Linked Lists, Stacks, Queues",
+      content: "Singly/doubly linked lists, stack and queue implementations, use-cases and complexity...",
+      pdfFile: "/pdfs/dsa_lists_stacks_queues.pdf",
+    },
+    {
+      title: "Trees & Graphs",
+      content: "Binary trees, BST, tree traversals, graphs, BFS, DFS, shortest paths basics...",
+      pdfFile: "/pdfs/dsa_trees_graphs.pdf",
+    },
+  ],
+
+  css: [
+    {
+      title: "Introduction to CSS",
+      content: "CSS (Cascading Style Sheets) controls presentation of HTML: selectors, properties, box model...",
+      pdfFile: "/pdfs/css_intro.pdf",
+    },
+    {
+      title: "Layout & Positioning",
+      content: "Display types, position (static/relative/absolute/fixed/sticky), float, clear, z-index...",
+      pdfFile: "/pdfs/css_layout_positioning.pdf",
+    },
+    {
+      title: "Flexbox & Grid",
+      content: "Modern layouts with Flexbox and CSS Grid: alignment, ordering, responsive designs...",
+      pdfFile: "/pdfs/css_flexbox_grid.pdf",
+    },
+    {
+      title: "Responsive Design & Media Queries",
+      content: "Mobile-first design, breakpoints, media queries, fluid units (%, rem, vw/vh)...",
+      pdfFile: "/pdfs/css_responsive.pdf",
+    },
+  ],
+
+  javascript: [
+    {
+      title: "Introduction to JavaScript",
+      content: "JavaScript is a scripting language for web pages — variables, types, operators, control flow...",
+      pdfFile: "/pdfs/js_intro.pdf",
+    },
+    {
+      title: "Functions & Scope",
+      content: "Function declarations/expressions, arrow functions, hoisting, lexical scope, closures...",
+      pdfFile: "/pdfs/js_functions_scope.pdf",
+    },
+    {
+      title: "DOM & Events",
+      content: "Document Object Model (DOM) manipulation, event handling, event delegation, forms and input handling...",
+      pdfFile: "/pdfs/js_dom_events.pdf",
+    },
+    {
+      title: "Asynchronous JS",
+      content: "Callbacks, Promises, async/await, fetch API, handling async flows and errors...",
+      pdfFile: "/pdfs/js_async.pdf",
+    },
+  ],
+
+  react: [
+    {
+      title: "Getting Started with React",
+      content: "React is a component-based UI library: JSX, components, props, state, create-react-app basics...",
+      pdfFile: "/pdfs/react_getting_started.pdf",
+    },
+    {
+      title: "Component Lifecycle & Hooks",
+      content: "Class lifecycle methods and modern Hooks (useState, useEffect, useRef, useContext)...",
+      pdfFile: "/pdfs/react_lifecycle_hooks.pdf",
+    },
+    {
+      title: "Routing & State Management",
+      content: "React Router for navigation, lifting state, context API, intro to Redux or other state libraries...",
+      pdfFile: "/pdfs/react_routing_state.pdf",
+    },
+    {
+      title: "Performance & Best Practices",
+      content: "Memoization (React.memo, useMemo), code splitting, lazy loading, accessibility and testing basics...",
+      pdfFile: "/pdfs/react_performance.pdf",
     },
   ],
   // Add more subjects...
