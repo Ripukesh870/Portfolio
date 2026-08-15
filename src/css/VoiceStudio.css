@@ -1,0 +1,23 @@
+.character-card{
+
+transition:.3s;
+
+}
+
+.character-card:hover{
+
+transform:translateY(-6px);
+
+border-color:#0dcaf0 !important;
+
+}
+
+.selected-card{
+
+border:2px solid #0dcaf0 !important;
+
+box-shadow:0 0 15px rgba(13,202,240,.35);
+
+}
+
+

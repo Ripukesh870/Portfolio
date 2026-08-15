@@ -92,13 +92,25 @@ import "../css/navbar.css";
 import { useNavigate } from "react-router-dom"; // ✅ Add this
 import { useLocation } from "react-router-dom";
 
+
 const navLinks = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
   { id: "honors", label: "Honors & Award" },
   { id: "contact", label: "Contact" },
-  { id: "resources", label: "Resources", isRoute: true }, // 📌 mark route links
+  {
+    id: "ai-creator",
+    label: "AI Creator",
+    isRoute: true,
+    path: "/ai-creator",
+  },
+{
+    id: "resources",
+    label: "Resources",
+    isRoute: true,
+    path: "/resources",
+  },
 ];
 
 const Navbar = () => {
@@ -168,10 +180,33 @@ const Navbar = () => {
               <li className="nav-item" key={item.id || item.label}>
                 {item.isRoute ? (
                   // ✅ Route navigation
+                  // <Link
+                  //   to="/resources"
+                  //   className="nav-link fs-5 px-2 text-light"
+                  //   onClick={() => handleLinkClick(item.id)}
+                  // >
+                  //   {item.label}
+                  // </Link>
+
+
+                  // <Link
+                  //   to={item.path}
+                  //   className="nav-link fs-5 px-2 text-light"
+                  //   onClick={() => setIsMenuOpen(false)}
+                  // >
+                  //   {item.label}
+                  // </Link>
                   <Link
-                    to="/resources"
-                    className="nav-link fs-5 px-2 text-light"
-                    onClick={() => handleLinkClick(item.id)}
+                    to={item.path}
+                    className={`nav-link fs-5 px-2 position-relative text-light ${
+                      activeSection === item.id
+                        ? "fw-bold text-warning underline-animate"
+                        : ""
+                    }`}
+                    onClick={() => {
+                      setActiveSection(item.id);
+                      setIsMenuOpen(false);
+                    }}
                   >
                     {item.label}
                   </Link>
